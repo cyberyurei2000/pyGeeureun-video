@@ -1,0 +1,87 @@
+maintitle: "Detective Conan"
+dir: "./Detective Conan"
+type: "anime-raw"
+1:
+    code: "S01E01"
+    title: "ジェットコースター殺人事件"
+2:
+    code: "S01E02"
+    title: "社長令嬢誘拐事件"
+3:
+    code: "S01E03"
+    title: "アイドル密室殺人事件"
+4:
+    code: "S01E04"
+    title: "大都会暗号マップ事件"
+5:
+    code: "S01E05"
+    title: "新幹線大爆破事件"
+6:
+    code: "S01E06"
+    title: "バレンタイン殺人事件"
+7:
+    code: "S01E07"
+    title: "月いちプレゼント脅迫事件"
+8:
+    code: "S01E08"
+    title: "美術館オーナー殺人事件"
+9:
+    code: "S01E09"
+    title: "天下一夜祭殺人事件"
+10:
+    code: "S01E10"
+    title: "プロサッカー選手脅迫事件"
+11:
+    code: "S01E11"
+    title: "ピアノソナタ「月光」殺人事件"
+12:
+    code: "S01E12"
+    title: "歩美ちゃん誘拐事件"
+13:
+    code: "S01E13"
+    title: "歩美ちゃん誘拐事件"
+14:
+    code: "S01E14"
+    title: "奇妙な人捜し殺人事件"
+15:
+    code: "S01E15"
+    title: "消えた死体殺人事件"
+16:
+    code: "S01E16"
+    title: "骨董品コレクター殺人事件"
+17:
+    code: "S01E17"
+    title: "デパートジャック事件"
+18:
+    code: "S01E18"
+    title: "6月の花嫁殺人事件"
+19:
+    code: "S01E19"
+    title: "エレベーター殺人事件"
+20:
+    code: "S01E20"
+    title: "幽霊屋敷殺人事件"
+21:
+    code: "S01E21"
+    title: "TVドラマロケ殺人事件"
+22:
+    code: "S01E22"
+    title: "豪華客船連続殺人事件（前編）"
+23:
+    code: "S01E23"
+    title: "豪華客船連続殺人事件（後編）"
+24:
+    code: "S01E24"
+    title: "謎の美女記憶喪失事件"
+25:
+    code: "S01E25"
+    title: "偽りの身代金誘拐事件"
+26:
+    code: "S01E26"
+    title: "愛犬ジョン殺人事件"
+27:
+    code: "S01E27"
+    title: "小五郎の同窓会殺人事件（前編）"
+28:
+    code: "S01E28"
+    title: "小五郎の同窓会殺人事件（後編）"
