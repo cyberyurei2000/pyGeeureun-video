@@ -7,10 +7,9 @@ from pathlib import Path
 import os
 import yaml
 
+
 def anime_full(data: dict[Any, Any]) -> None:
-    """
-        This function is for anime videos with subtitles and fonts already included.
-    """
+    """This function is for anime videos with subtitles and fonts already included."""
     os.chdir(data["dir"])
     files = sorted(os.listdir(os.getcwd()))
     counter = 0
@@ -27,10 +26,9 @@ def anime_full(data: dict[Any, Any]) -> None:
             os.system(cmd)
             counter += 1
 
+
 def anime_raw(data: dict[Any, Any]) -> None:
-    """
-        This function is for anime raw files which needs to embend subtitles.
-    """
+    """This function is for anime raw files which needs to embend subtitles."""
     os.chdir(data["dir"])
     files = sorted(os.listdir(os.getcwd()))
     counter = 0
@@ -58,10 +56,9 @@ def anime_raw(data: dict[Any, Any]) -> None:
             os.system(cmd)
             counter += 1
 
+
 def globo_squished_fix(data: dict[Any, Any]) -> None:
-    """
-        Fix aspect ratio of content that was originally released in 4:3 but was poorly modified to 16:9.
-    """
+    """Fix aspect ratio of content that was originally released in 4:3 but was poorly modified to 16:9."""
     os.chdir(data["dir"])
     files = sorted(os.listdir(os.getcwd()))
     counter = 0
@@ -97,13 +94,17 @@ def globo_squished_fix(data: dict[Any, Any]) -> None:
             os.system(cmd)
             counter += 1
 
-with open("./data.yml", "r") as f:
-    DATA = yaml.safe_load(f)
-    TYPE = DATA["type"]
-    match TYPE:
-        case "anime-full":
-            anime_full(DATA)
-        case "anime-raw":
-            anime_raw(DATA)
-        case "globo-squished":
-            globo_squished_fix(DATA)
+
+with open("./data.yml", "r") as stream:
+    try:
+        DATA = yaml.safe_load(stream)
+        TYPE = DATA["type"]
+        match TYPE:
+            case "anime-full":
+                anime_full(DATA)
+            case "anime-raw":
+                anime_raw(DATA)
+            case "globo-squished":
+                globo_squished_fix(DATA)
+    except yaml.YAMLError as err:
+        print(err)
