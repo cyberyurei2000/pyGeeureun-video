@@ -113,18 +113,23 @@ def series_simple(data: dict[str | int, Any]) -> None:
             counter += 1
 
 
-with open("./data.yml", "r") as stream:
-    try:
-        DATA = yaml.safe_load(stream)
-        TYPE = DATA["type"]
-        match TYPE:
-            case "anime-full":
-                anime_full(DATA)
-            case "anime-raw":
-                anime_raw(DATA)
-            case "series-simple":
-                series_simple(DATA)
-            case "globo-squished":
-                globo_squished_fix(DATA)
-    except yaml.YAMLError as err:
-        print(err)
+def main():
+    with open("./data.yml", "r") as stream:
+        try:
+            DATA = yaml.safe_load(stream)
+            TYPE = DATA["type"]
+            match TYPE:
+                case "anime-full":
+                    anime_full(DATA)
+                case "anime-raw":
+                    anime_raw(DATA)
+                case "series-simple":
+                    series_simple(DATA)
+                case "globo-squished":
+                    globo_squished_fix(DATA)
+        except yaml.YAMLError as err:
+            print(err)
+
+
+if __name__ == "__main__":
+    main()
